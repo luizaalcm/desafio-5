@@ -11,8 +11,29 @@
     --cor3:black;
 }
 body{
-    background-color: var(--cor0);
+    background-color:#F8F7F3;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+nav{
+padding: 10px;
+position: absolute;
+top: 2%;
+right: 0;
+font-family: 'Nofancy',Arial, Helvetica, sans-serif;
+font-size: 1em;
+font-weight: bolder;
+}
+nav > a{
+text-decoration: none;
+color: var(--cor3);
+padding: 10px;
+padding-top: -10px;
+
+}
+nav > img{
+    width: 50px;
+    border-radius: 50%;
 }
 div.sidebar{
     position: fixed;
@@ -55,19 +76,56 @@ h1{
     color: var(--cor0);
     width: 650px;
     height: 200px;
-    margin-left: 25%;
-    border-radius: 5px;
+    margin-left: 20%;
+    border-radius: 7px;
+}
+.quadro > a{
+    color: var(--cor0);
+}
+.recruitment{
+    background-color: var(--cor0);
+    position: relative;
+    width: 650px;
+    height: 300px;
+    margin-left: 20%;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.050);
+    margin-top: 30px;
+    
+}
+.recruitment > h2{
+    position: relative;
+    top: -5px;
+}
+.recruitment > button{
+background-color: var(--cor1);
+border: none;
+width: 100px;
+height: 30px;
+border-radius: 15px;
+position: relative;
+margin-left: 80%;
+top: -5px;
+}
+.recruitment > button > a{
+    text-decoration: none;
+    color: var(--cor0);
 }
 .perfil{
     width: 400px;
+    height: 300px;
     position: relative;
-    margin-left: 75%;
+    margin-left: 69%;
+    top: -300px;
+    background-color: var(--cor0);
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.050);
 }
 .perfil > h2{
 
 }
 .perfil > h3{
-    
+
 }
 .perfil > ul{
     display: flex;
@@ -75,5 +133,14 @@ h1{
 .perfil > ul > li{
     list-style: none;
   padding: 10px;
-
+}
+.perfil >ul.ul2{
+    display: flex;
+}
+.perfil >ul.ul3{
+    display: flex;
+}
+.perfil > img{
+    width: 60px;
+    border-radius: 50%;
 }
