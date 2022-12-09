@@ -1,48 +1,55 @@
 @charset "UTF-8";
 
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-:root{
-    --cor0:white;
-    --cor1:#EC9509;
-    --cor2:#262125;
-    --cor3:black;
+
+:root {
+    --cor0: white;
+    --cor1: #EC9509;
+    --cor2: #262125;
+    --cor3: black;
 }
-body{
-    background-color:#F8F7F3;
+
+body {
+    background-color: #F8F7F3;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
 }
-nav{
-padding: 10px;
-position: absolute;
-top: 2%;
-right: 0;
-font-family: 'Nofancy',Arial, Helvetica, sans-serif;
-font-size: 1em;
-font-weight: bolder;
+
+nav {
+    padding: 10px;
+    position: absolute;
+    top: 2%;
+    right: 0;
+    font-family: 'Nofancy', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
 }
-nav > a{
-text-decoration: none;
-color: var(--cor3);
-padding: 10px;
-padding-top: -10px;
+
+nav>a {
+    text-decoration: none;
+    color: var(--cor3);
+    padding: 10px;
+    padding-top: -10px;
 
 }
-nav > img{
+
+nav>img {
     width: 50px;
     border-radius: 50%;
 }
-div.sidebar{
+
+div.sidebar {
     position: fixed;
     width: 220px;
     height: 100%;
     left: 0;
     background-color: var(--cor2);
 }
-.sidebar > a{
+
+.sidebar>a {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor0);
     display: block;
@@ -52,26 +59,34 @@ div.sidebar{
     padding-left: 20px;
     box-sizing: border-box;
 }
-.sidebar a:hover{
-    background-color: var(--cor1);
-    color: var(--cor4);
+
+.sidebar a:hover {
+    color: var(--cor1);
 }
-.sidebar > p{
+
+.sidebar>p {
     color: var(--cor0);
     font-size: 1.2em;
 }
-h1{
+
+.sidebar>img {
+    position: fixed;
+    width: 200px;
+    left: 2%;
+    top: 20px;
+}
+
+h1 {
     color: var(--cor4);
     position: relative;
     margin-left: 25%;
     padding: 20px;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 25px;
 }
 
 .quadro {
     background-color: var(--cor1);
-    text-align: center;
     position: relative;
     color: var(--cor0);
     width: 650px;
@@ -79,10 +94,37 @@ h1{
     margin-left: 20%;
     border-radius: 7px;
 }
-.quadro > a{
-    color: var(--cor0);
+
+.quadro>h2 {
+    padding-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    left: 20px;
 }
-.recruitment{
+
+.quadro>p {
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+}
+
+.quadro>a {
+    color: var(--cor0);
+    position: relative;
+    top: -230px;
+    left: 20px;
+
+}
+
+.quadro>img {
+    width: 260px;
+    position: relative;
+    left: 50%;
+    top: -170px;
+}
+
+.recruitment {
     background-color: var(--cor0);
     position: relative;
     width: 650px;
@@ -91,27 +133,118 @@ h1{
     border-radius: 7px;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.050);
     margin-top: 30px;
-    
+
 }
-.recruitment > h2{
+
+.recruitment>h2 {
     position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 17px;
+}
+
+.recruitment>button {
+    background-color: var(--cor1);
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    margin-left: 80%;
     top: -5px;
 }
-.recruitment > button{
-background-color: var(--cor1);
-border: none;
-width: 100px;
-height: 30px;
-border-radius: 15px;
-position: relative;
-margin-left: 80%;
-top: -5px;
-}
-.recruitment > button > a{
+
+.recruitment>button>a {
     text-decoration: none;
     color: var(--cor0);
 }
-.perfil{
+
+.recruitment>ul.imagens {
+    padding: 15px; 
+    padding-top: 40px;
+}
+
+.recruitment>ul.imagens>li {
+    list-style: none;
+
+}
+
+.recruitment>ul.imagens>li>img {
+  
+    width: 45px;
+    border-radius: 50%;
+    border: solid 0.5px  rgba(0, 0, 0, 0.456);
+
+}
+
+.recruitment>ul.list {
+    display: flex;
+    position: relative;
+    top: -270px;
+}
+
+.recruitment>ul.list>li {
+    list-style: none;
+    font-weight: bold;
+    padding: 20px;
+    
+    left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+.recruitment>.line1 {
+    background-color: rgba(0, 0, 0, 0.256);
+    width: 620px;
+    height: 1px;
+    margin-left: 20px;
+}
+
+.recruitment>.line2 {
+    background-color: rgba(0, 0, 0, 0.256);
+    width: 620px;
+    height: 1px;
+    margin-left: 20px;
+    position: relative;
+    top: 35px;
+    
+}
+.recruitment > ul.name {
+    position: relative;
+    top: -280px;
+left: 60px;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.685);
+font-size: 0.9em;
+   
+}
+.recruitment > ul.name > li{
+    list-style: none;
+    padding: 17px;
+    
+}
+.recruitment > ul.designation{
+position: relative;
+top: -475px;
+left: 37%;
+}
+.recruitment > ul.designation > li{
+    list-style: none;
+    padding: 17px;
+    font-size: 0.9em;
+}
+.recruitment >ul.status {
+position: relative;
+top: -673px;
+left: 60%;
+}
+.recruitment > ul.status > li{
+    list-style: none;
+    padding: 17px;
+    font-size: 0.9em;
+}
+.perfil {
     width: 400px;
     height: 300px;
     position: relative;
@@ -121,26 +254,76 @@ top: -5px;
     border-radius: 8px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.050);
 }
-.perfil > h2{
 
+.perfil>h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    position: relative;
+    top: -50px;
+    left: 100px;
 }
-.perfil > h3{
 
+.perfil>h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    position: relative;
+    top: -46px;
+    left: 100px;
 }
-.perfil > ul{
+
+.perfil>ul.icons {
     display: flex;
+    position: relative;
+    left: 50px;
+    top: -10px;
+   
 }
-.perfil > ul > li{
+.perfil > ul.icons > li{
+     background-color:#F8F7F3;
+     border-radius: 50%;
+     width: 20px;
+}
+
+.perfil>ul>li {
     list-style: none;
-  padding: 10px;
+    padding: 10px;
+
 }
-.perfil >ul.ul2{
-    display: flex;
+
+.perfil>ul.ul2 {
+ font-weight: bold; 
+ position: relative;
+ left: 20px; 
+ top: 10px; 
 }
-.perfil >ul.ul3{
-    display: flex;
+.perfil>ul.ul2 > li {
+    list-style: none;
 }
-.perfil > img{
+
+
+.perfil>ul.ul3 {
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: bold;
+    position: relative;
+    left: 60%;
+    top: -100px;
+}
+.perfil> ul3 > li{
+    list-style: none;
+}
+.perfil>img {
     width: 60px;
     border-radius: 50%;
+    position: relative;
+    padding: 20px;
+    left: 13px;
+    top: 20px;
+}
+.perfil > .listra{
+    background-color: rgba(0, 0, 0, 0.256);
+    width: 350px;
+    height: 1.2px;
+    margin-left: 20px;
+    position: relative;
+    top: 35px;
 }
