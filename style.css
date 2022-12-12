@@ -21,7 +21,7 @@ body {
 nav {
     padding: 10px;
     position: absolute;
-    top: 2%;
+    top: -3%;
     right: 0;
     font-family: 'Nofancy', Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -36,9 +36,12 @@ nav>a {
 
 }
 
-nav>img {
+nav > img {
     width: 50px;
     border-radius: 50%;
+    position: relative;
+    top: 12px;
+    
 }
 
 div.sidebar {
