@@ -79,8 +79,9 @@ div.sidebar {
 h1 {
     color: var(--cor4);
     position: relative;
-    margin-left: 25%;
-    padding: 20px;
+    margin-left: 19.5%;
+    margin-bottom: 10px;
+    padding: 10px;
     font-weight: bold;
     font-size: 25px;
 }
@@ -272,7 +273,7 @@ left: 60%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     position: relative;
-    top: -50px;
+    top: -70px;
     left: 100px;
 }
 
@@ -280,15 +281,15 @@ left: 60%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     position: relative;
-    top: -46px;
+    top: -66px;
     left: 100px;
 }
 
 .perfil>ul.icons {
     display: flex;
     position: relative;
-    left: 50px;
-    top: -10px;
+    left: 70px;
+    top: -55px;
    
 }
 .perfil > ul.icons > li{
@@ -307,7 +308,7 @@ left: 60%;
  font-weight: bold; 
  position: relative;
  left: 20px; 
- top: 10px; 
+ top: -40px; 
 }
 .perfil>ul.ul2 > li {
     list-style: none;
@@ -319,7 +320,7 @@ left: 60%;
     font-weight: bold;
     position: relative;
     left: 60%;
-    top: -100px;
+    top: -150px;
 }
 .perfil> ul3 > li{
     list-style: none;
@@ -330,7 +331,7 @@ left: 60%;
     position: relative;
     padding: 20px;
     left: 13px;
-    top: 20px;
+    top: 4px;
 }
 .perfil > .listra{
     background-color: rgba(0, 0, 0, 0.256);
@@ -338,5 +339,5 @@ left: 60%;
     height: 1.2px;
     margin-left: 20px;
     position: relative;
-    top: 35px;
+    top: -10px;
 }
